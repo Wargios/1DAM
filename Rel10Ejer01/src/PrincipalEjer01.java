@@ -1,5 +1,5 @@
 
-public class MainEjer01 {
+public class PrincipalEjer01 {
 	public static void main(String[] args) {
 		
 	}
