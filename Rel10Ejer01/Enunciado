@@ -1,0 +1,27 @@
+Ejercicio 1
+Se pide realizar una clase Cuenta con los siguientes métodos
+• Un constructor sin ningún argumento que cree una cuenta con saldo 0.
+• Un constructor que cree una cuenta con un saldo inicial
+• Método get para obtener el saldo de la cuenta.
+• Un metódo para sacar una cantidad de la cuenta, no se puede dejar la cuenta en
+números rojos
+• Un método para ingresar una cantidad en la cuenta
+Además se debe realizar una clase ProbandoCuenta que cree varias objetos Cuenta y
+pruebe los métodos anteriores
+A continuación realizar una clase CuentaCredito que herede de la clase Cuenta y que
+cumpla además:
+• Al crear una cuenta de crédito se indica que cantidad de crédito se dispone, es
+decir en cuanto puede quedar la cuenta en números rojos. Por ejemplo si el crédito
+es 100 euros la cuenta podrá llegar a tener un saldo igual a –100.
+• Inicialmente si no se indica nada, el saldo de la cuenta es 0.
+• Inicialmente s i no se indica nada, el crédito es de 100 euros
+• Se debe incluir un métodos get y set para el crédito. El crédito nunca puede
+superar los 300 euros. También habrá que tener en cuenta el saldo actual de la
+cuenta.
+• Se deberá modificar los métodos de sacarDinero para incluir el crédito.
+Realizar una clase de prueba MenuCuentaCredito que cree una cuenta de crédito y
+presente un menú con estas opciones.
+1. Ingresar dinero
+2. Sacar dinero
+3. Mostrar saldo y credito
+4. Salir 
