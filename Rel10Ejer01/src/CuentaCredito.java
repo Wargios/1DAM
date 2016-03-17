@@ -6,7 +6,7 @@ public class CuentaCredito extends Cuenta {
 
 		super(cantidad);
 
-		if (credito < 300)
+		if (credito > 300)
 			throw new CuentaException("No puede Exceder los 300€ de crédito");
 		if (credito < 0 || cantidad < 0)
 			throw new CuentaException("No puede tener valores negativos");
@@ -30,8 +30,13 @@ public class CuentaCredito extends Cuenta {
 	public void retirarCantidad(int cantidad) throws CuentaException {
 		// Si es menor que el negativo del credito da Error
 		if (getSaldo() - cantidad < -credito)
-			throw new CuentaException("Error. La cantidad que desea retirar supero el credito establecido" + credito);
+			throw new CuentaException("Error. La cantidad que desea retirar supera el credito establecido " + credito);
 		super.retirarCantidad(cantidad);
+	}
+	public String toString() {
+		StringBuilder sbtexto = new StringBuilder();
+		sbtexto.append("La cuenta tiene:\n" + "Saldo: " + getSaldo() + "\nCredito: " + getCredito());
+		return sbtexto.toString();
 	}
 
 }
