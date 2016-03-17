@@ -14,7 +14,7 @@ public class Cuenta {
 		return saldo;
 	}
 
-	public void retirarCantidad(int cantidad) {
+	public void retirarCantidad(int cantidad) throws CuentaException {
 		saldo -= cantidad;
 	}
 
