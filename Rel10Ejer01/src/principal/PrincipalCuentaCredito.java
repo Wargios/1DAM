@@ -66,15 +66,15 @@ public class PrincipalCuentaCredito {
 		do{
 			try{
 				System.out.println();
-				System.out.println("MEN� CUENTA DE CR�DITO");
+				System.out.println("MENU CUENTA DE CREDITO");
 				System.out.println("1.Ingresar Dinero");
 				System.out.println("2.Sacar dinero");
-				System.out.println("3.Mostrar saldo y cr�dito");
+				System.out.println("3.Mostrar saldo y credito");
 				System.out.println("4.Modificar credito"); // esta opci�n no la pide el programa, la a�adimos
 															// para probar el setCredito
 				System.out.println("5.Salir");
 				System.out.println();
-				System.out.println("Introduzca una opci�n");
+				System.out.println("Introduzca una opcion");
 				elegida=Integer.parseInt(teclado.nextLine());
 			}catch (NumberFormatException x){
 				elegida=0;
