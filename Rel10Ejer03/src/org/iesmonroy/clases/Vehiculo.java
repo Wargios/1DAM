@@ -30,7 +30,5 @@ public abstract class Vehiculo {
 		}
 
 		return precio;
-
 	}
-
 }
