@@ -1,11 +1,16 @@
 package org.iesmonroy.clases;
 
 public class FurgonetaDeCarga extends Vehiculo{
-	private int pesoMaximoAutorizado;
+	private int pMA;
 
-	public FurgonetaDeCarga(String matricula, String Gama, String combustible, int pesoMaximoAutorizado) {
-		super(matricula, Gama, combustible);
-		this.pesoMaximoAutorizado = pesoMaximoAutorizado;
+	public FurgonetaDeCarga(String matricula, TipoGama gama, int pesoMaximoAutorizado) {
+		super(matricula, gama);
+		this.pMA = pesoMaximoAutorizado;
+	}
+	private double precio(){
+		double precio = precioGama()+20*pMA;
+		
+		return precio;
 	}
 
 }
