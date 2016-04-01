@@ -9,7 +9,7 @@ public class Microbus extends Vehiculo {
 	}
 	
 	private double precio(){
-		double precio = precioGama()+plazas*5;
+		double precio = precioGama() + plazas * 5;
 		
 		return precio;
 	}

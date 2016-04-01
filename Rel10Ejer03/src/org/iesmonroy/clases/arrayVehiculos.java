@@ -12,6 +12,7 @@ public class arrayVehiculos {
 	
 	private void altaVehiculo(Vehiculo v){
 		listaVehiculos[contador] = v;
+		contador++;
 		
 	}
 	
