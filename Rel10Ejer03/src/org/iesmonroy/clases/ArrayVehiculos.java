@@ -1,12 +1,12 @@
 package org.iesmonroy.clases;
 
-public class arrayVehiculos {
+public class ArrayVehiculos {
 	private static int contador = 0;
 	
 	private static final int TOTALVEHICULOS = 200;
 	private Vehiculo[] listaVehiculos;
 	
-	public arrayVehiculos() {
+	public ArrayVehiculos() {
 		listaVehiculos = new Vehiculo[TOTALVEHICULOS];
 	}
 	
