@@ -8,9 +8,9 @@ public class Principal {
 	static Scanner teclado = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		ArrayVehiculos listaVheiculos;
+		ArrayVehiculos listaVheiculos = null;
 		
-		
+		listaVheiculos.toString();
 
 	}
 
