@@ -69,4 +69,21 @@ public class Mago extends Personaje {
 			}
 		return resul;
 	}
+	
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < hechizo.length; i++) {
+			if (hechizo[i] != null) {
+				sb.append(hechizo[i]);
+				if (i != hechizo.length-1) {
+					sb.append(", ");					
+				}	
+			}
+		}
+		if (sb.toString().equals("")) {
+			sb.append("No sabe ningún hechizo.");
+		}
+		
+		return super.toString()+"\n HECHIZOS: "+ sb;
+	}
 }

@@ -18,7 +18,7 @@ public abstract class Personaje {
 	private int fuerza;
 	private int inteligencia;
 	private int puntosVidaMax;
-	protected int puntosVidaAct;
+	private int puntosVidaAct;
 
 	public Personaje(String nombre, Raza raza, int fuerza, int inteligencia, int vidaMax) throws PersonajeException {
 		setNombre(nombre);
@@ -94,8 +94,8 @@ public abstract class Personaje {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("NOMBRE=" + nombre + " RAZA=" + raza + " FUE=" + fuerza + " INT=" + inteligencia + " PV="
-				+ puntosVidaAct + " PVMAX=" + puntosVidaMax);
+		sb.append("NOMBRE: " + nombre + " RAZA: " + raza + " FUE=" + fuerza + " INT=" + inteligencia + " PV="
+				+ puntosVidaAct + "/" + puntosVidaMax);
 
 		return sb.toString();
 	}

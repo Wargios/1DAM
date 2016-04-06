@@ -51,6 +51,7 @@ que recibe como parámetro un objeto de tipo Personaje sobre el que recae la
 acción de curar y que aumenta en 10 los puntos de vida
 • Reescribe el método imprime para que muestre además de los datos básicos el
 nombre del dios.
+
 Apartado 4:
 Escribe una clase de prueba con un método main en la que se creen 2 magos (A y B) y un
 clérigo (C) y en el que tengan que realizar las siguientes acciones.
