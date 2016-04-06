@@ -91,6 +91,14 @@ public abstract class Personaje {
 		this.raza = raza;
 	}
 
+	public boolean equals(Personaje p) {
+		boolean resul = false;
+		if (this.nombre == p.nombre) {
+			resul = true;
+		}
+		return resul;
+	}
+
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 
@@ -99,4 +107,5 @@ public abstract class Personaje {
 
 		return sb.toString();
 	}
+
 }

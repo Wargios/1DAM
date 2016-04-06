@@ -62,10 +62,11 @@ public class Mago extends Personaje {
 				hechizo[i] = null;
 				resul = true;
 			}
+			i++;
 
-		} while (!resul && i <= hechizo.length);
+		} while (!resul && i < hechizo.length);
 			if (!resul) {
-				throw new PersonajeException("Hechizo no aprendido");
+				throw new PersonajeException("Hechizo"+ nombreHechizo +"no aprendido");
 			}
 		return resul;
 	}
