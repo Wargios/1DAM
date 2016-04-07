@@ -102,7 +102,7 @@ public abstract class Personaje {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("NOMBRE: " + nombre + " RAZA: " + raza + " FUE=" + fuerza + " INT=" + inteligencia + " PV="
+		sb.append("NOMBRE=" + nombre + " RAZA=" + raza + " FUE=" + fuerza + " INT=" + inteligencia + " PV="
 				+ puntosVidaAct + "/" + puntosVidaMax);
 
 		return sb.toString();
