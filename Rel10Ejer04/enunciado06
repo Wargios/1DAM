@@ -1,0 +1,15 @@
+Ejercicio 6
+Dada la siguiente interfaz:
+public interface CreableEstadisticas
+{
+double minimo();
+double maximo();
+double media();
+}
+Modificar la clase ArrayFiguras del ejercicio 2 para que implemente esta
+interfaz. Los métodos devolverán el area mínima entre todas las figuras, el área
+máxima y la media de las areas.
+Modificar la clase ArrayPersonajes del ejercicio 5 para que implemente también
+la interfaz. Devolverá los puntos de vida mínimos, puntos de vida máximo, y
+media de los puntos de vida de los personajes.
+Probar los métodos anteriores.

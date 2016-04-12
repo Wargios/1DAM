@@ -1,6 +1,6 @@
 package org.iesmonroy.personaje;
 
-public class ArrayPersonajes {
+public class ArrayPersonajes implements CreableEstadisticas {
 	private static final int PERSONAJESMAX = 100;
 	private Personaje[] vPersonaje;
 
@@ -78,6 +78,24 @@ public class ArrayPersonajes {
 	
 	public Personaje getPersonaje(int i) {
 		return vPersonaje[i];
+	}
+
+	@Override
+	public double minimo() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double maximo() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double media() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
