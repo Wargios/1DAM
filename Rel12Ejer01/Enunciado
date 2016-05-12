@@ -1,0 +1,19 @@
+Ejercicio1
+Escribir un programa para gestionar conjuntos de alumnos apuntados a equipos
+deportivos.
+El programa dispondrá de:
+• La Clase Alumno, con los atributos: nombre y DNI de tipo String. Implementar el
+método constructor y los métodos toString() y equals,
+• La Clase Equipo. Cada equipo deportivo se representa en una clase que contiene
+el nombre del equipo y un conjunto de alumnos.
+El equipo tiene operaciones para:
+− Añadir un alumno. x
+− Borrar un alumno. x
+− Saber si un alumno pertenece al equipo x
+− Mostrar en pantalla la lista de personas del equipo x
+− Unión de equipos. Recibe dos equipos (uno sólo por parámetro) y devuelve
+un equipo formado por los alumnos de ambos equipos.
+− Intersección de equipos. Recibe dos equipos (uno sólo por parámetro) y
+devuelve un equipo formado por los alumnos que están en los dos equipos
+• Programa de prueba que crea varios equipos y prueba todas las operaciones
+mostrando en pantalla los resultados. 
