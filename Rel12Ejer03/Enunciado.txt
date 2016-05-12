@@ -1,0 +1,13 @@
+Ejercicio 3
+Realizar un programa que permita almacenar un historial de páginas web
+consultadas por un usuario
+Se debe realizar un menú de este tipo
+1. Nueva página consultada: Se solicitará el nombre de la página y la fecha
+(año, mes y día) y hora (hora y minutos) y se insertará en el historial. No se
+permitirá introducir una fecha y hora anterior a la última almacenada.
+2. Consultar historial completo
+3. Consultar historial de un día
+4. Borrar historial completo
+5. Salir
+NOTA: No debe establecerse ningún límite en la cantidad de entradas del historial. Pensar
+que contenedor es el más apropiado.
