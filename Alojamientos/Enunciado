@@ -1,0 +1,49 @@
+EJERCICIO PARA NOTA DE CLASE
+La empresa "CHAUCHINA ALOJAMIENTOS" desea diseñar una aplicación para la
+gestionar los precios en diferentes tipos de alojamientos que ofertan en su localidad.
+Los alojamientos pueden ser hoteles o casas rurales.
+
+Todos los alojamientos tienen un nombre, una dirección y una nota (0-10) calculada por
+la media de las opiniones de los usuarios que se van alojando. Inicialmente cuando se
+cree un alojamiento no tendrá opiniones, ni por tanto podrá mostrase ninguna nota
+media. Cuando se muestre los datos del alojamiento, aparecerá "SIN OPINIONES".
+
+Todo alojamiento debe tener un método que permita, pasándole el número de noches y
+la temporada (alta, media, o baja) calcular el precio del alojamiento. También debe tener
+un método que permita dar una nota de 0 a 10 a un alojamiento (este dato no se
+almacenará sólo servirá para actualizar su nota media).
+
+De los hoteles se necesita conocer el número de estrellas que tiene ( de 3 a 5) y el
+número de habitaciones totales. De las casas rurales se debe almacenar los metros
+cuadrados y si tiene o no piscina.
+El cálculo del precio de una noche en un hotel en temporada baja es
+
+3 ESTRELLAS 30 euros
+4 ESTRELLAS 55 euros
+5 ESTRELLAS 72 euros
+
+El precio de una noche en una casas rural se calcula por el número de metros
+cuadrados, de forma que en temporada baja será 0,75 euros* metros cuadrados.
+Para cualquier tipo de alojamiento si la temporada es media los precios se
+incrementan en un 10% y si es alta en un 20%. 
+
+El programa debe tener al menos las siguientes clases
+• Clase Alojamiento
+• Clase Hotel
+• Clase CasaRural
+• Clase AlojamientoException
+• Clase Principal:
+La clase principal realizará los siguientes pasos:
+1. Creará tres alojamientos (1 hotel y dos casas rurales) con datos
+inventados y los insertará en un vector
+2. Mostrará por pantalla el vector de alojamientos
+3. Se solicitará el nombre de un alojamiento y, si existe, se darán tres
+opiniones con valores 8, 9 y 9 sobre él.
+4. Se solicitará el nombre de un alojamiento y, si existe, se mostrará cuánto
+cuesta quedarse 5 noches en dicho alojamiento en temporada alta
+5. Se solicitará el nombre de un alojamiento y si existe, se borrará del
+vector.
+6. Volverá a mostrar por pantalla el vector de alojamientos.
+Además se diseñará la clase de forma que aunque uno de los pasos anteriores de
+error se mostrará el error y se continuará con el siguiente.
+NOTA: Debe usarse un tipo enumerado para la temporada 
