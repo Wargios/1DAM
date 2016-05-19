@@ -37,6 +37,13 @@ public class Club {
 		return resul;
 	}
 	
+	/**
+	 * Modifica el socio
+	 * @param dni
+	 * @param nombre
+	 * @param telefono
+	 * @return devuelve true si lo consigue modificar
+	 */
 	public boolean modificarSocio (String dni, String nombre, int telefono){
 		boolean resul = Socios.containsKey(dni);
 		Socio nuevoSocio = new Socio(dni, nombre, telefono);

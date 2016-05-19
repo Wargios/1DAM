@@ -1,4 +1,3 @@
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class Principal {
@@ -6,43 +5,78 @@ public class Principal {
 
 	public static void main(String[] args) {
 		Club clubSocios = new Club();
+		int o = 0;
+		do {
+			try {
+				mostrarMenu();
+				System.out.println("Introduce una opcion");
 
-		mostrarMenu();
-		System.out.println("Introduce una opcion");
-		int o = Integer.parseInt(teclado.nextLine());
-		
-		
-		tratarMenu(o, clubSocios);
-		
+				o = Integer.parseInt(teclado.nextLine());
+
+				tratarMenu(o, clubSocios);
+			} catch (Exception e) {
+				System.out.println("Error");
+			}
+		} while (o != 5);
+
 	}
 
 	private static void tratarMenu(int o, Club club) {
-		Socio s = new Socio(introducirDni(), introducirNombre(), introducirTelefono()); // Falta telefono
-		
-		
+		switch (o) {
+		case 1:
+			Socio s = new Socio(introducirDni(), introducirNombre(), introducirTelefono());
+			club.altaSocio(s);
+			break;
+
+		case 2:
+			if (club.bajaSocio(introducirDni())) {
+				System.out.println("Socio borrado.");
+			} else {
+				System.out.println("Socio no encontrado.");
+			}
+			;
+
+			break;
+
+		case 3:
+			if (club.modificarSocio(introducirDni(), introducirNombre(), introducirTelefono())) {
+				System.out.println("Socio modificado correctamente");
+			}else {
+				System.out.println("socio no encontrado");
+			}
+			break;
+
+		case 4:
+			System.out.println(club.consultarSocio(introducirDni()));
+			break;
+
+		case 5:
+			System.out.println("Hasta luego");
+			break;
+
+		}
 	}
 
 	private static String introducirDni() {
 		String dni;
-		System.out.println("Introduce dni");
+		System.out.println("Introduce Dni:");
 		dni = teclado.nextLine();
 		return dni;
 	}
-	
+
 	private static String introducirNombre() {
 		String dni;
-		System.out.println("Introduce nombre");
+		System.out.println("Introduce nombre:");
 		dni = teclado.nextLine();
 		return dni;
 	}
-	
+
 	private static int introducirTelefono() {
 		int telefono;
-		System.out.println("Introduce telefono");
+		System.out.println("Introduce telefono:");
 		telefono = Integer.parseInt(teclado.nextLine());
 		return telefono;
 	}
-	
 
 	private static void mostrarMenu() {
 		System.out.println("MENU");
