@@ -4,6 +4,7 @@ public class Socio implements Comparable<Socio> {
 	private String nombre;
 	private int telefono;
 
+
 	public Socio(String dni, String nombre, int telefono) {
 		this.dni = dni;
 		this.nombre = nombre;
