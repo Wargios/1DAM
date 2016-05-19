@@ -1,16 +1,3 @@
-Ejercicio 5
-Realizar un programa que permita gestionar un club de socios admitiendo altas y bajas de
-socios, y modificaciones de los datos de los socios así como consultas de socios del club. Para
-cada socio se guardará su DNI, nombre y teléfono. El programa presentará un menú de este
-tipo:
-1. Alta de Socio (se pedirá DNI, nombre y teléfono y se dará de alta. Tener en cuenta que
-no pueden darse de alta dos socios con el mismo DNI).
-2. Baja de Socio ( por DNI del socio)
-3. Modificar Datos Socio (por DNI del socio, podrá modificarse nombre y teléfono)
-4. Consulta los datos de un socio (por DNI).
-5. Salir
-NOTA: No debe establecerse ningún límite en el número de socios que tratará el programa.
-Pensar que contenedor es el más apropiado.
 
 Ejercicio 6
 Modificar el ejercicio 5 de esta relación para incluir un nuevo menú que será la opción 5 del

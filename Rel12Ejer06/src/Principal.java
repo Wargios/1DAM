@@ -84,7 +84,8 @@ public class Principal {
 		System.out.println("2. Baja de Socio");
 		System.out.println("3. Modificar Datos Socio");
 		System.out.println("4. Consulta los datos de un socio");
-		System.out.println("5. Salir");
+		System.out.println("5. Actividades");
+		System.out.println("6. Salir");
 	}
 
 }
