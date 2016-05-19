@@ -1,0 +1,16 @@
+Ejercicio 6
+Modificar el ejercicio 5 de esta relación para incluir un nuevo menú que será la opción 5 del
+menú principal. Esta opción se llamará “Actividades” y abrirá otro menú con las siguientes
+opciones
+1. Nueva Actividad
+Se solicitará el DNI del socio que organiza la actividad, el nombre de la actividad y la fecha
+(día, mes y año).
+2. Consulta de todas las actividades organizadas por un socio ordenadas por fecha
+Se solicitará el DNI del socio y se mostrará un listado de las actividades organizadas por el
+socio.
+3. Consulta de todas las actividades organizadas por un socio ordenadas por nombre: Se
+solicitará el DNI del socio y se mostrará un listado de las actividades organizadas por el
+socio.
+4. Volver
+NOTAS: No puede considerarse ningún límite máximo de actividades. Pensar que contenedor
+es el más apropiado. 

@@ -5,15 +5,21 @@ public class Principal {
 	private static Scanner teclado = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		HashMap<String, Socio> mapaSocios = new HashMap<String, Socio>();
+		Club clubSocios = new Club();
 
 		mostrarMenu();
+		System.out.println("Introduce una opcion");
 		int o = Integer.parseInt(teclado.nextLine());
 		
-		Socio s = new Socio(introducirDni(), introducirNombre(), 1); // Falta telefono
 		
-		mapaSocios.put(s.getDni(), s);
+		tratarMenu(o, clubSocios);
+		
+	}
 
+	private static void tratarMenu(int o, Club club) {
+		Socio s = new Socio(introducirDni(), introducirNombre(), introducirTelefono()); // Falta telefono
+		
+		
 	}
 
 	private static String introducirDni() {
@@ -22,11 +28,19 @@ public class Principal {
 		dni = teclado.nextLine();
 		return dni;
 	}
+	
 	private static String introducirNombre() {
 		String dni;
 		System.out.println("Introduce nombre");
 		dni = teclado.nextLine();
 		return dni;
+	}
+	
+	private static int introducirTelefono() {
+		int telefono;
+		System.out.println("Introduce telefono");
+		telefono = Integer.parseInt(teclado.nextLine());
+		return telefono;
 	}
 	
 
