@@ -1,0 +1,12 @@
+Ejercicio 1
+Se desea realizar un programa para la gestión de pedidos de una pizzería. Se
+mostrará un menú con estas opciones
+1. Nuevo pedido: Se solicitará la dirección del cliente y los datos de la pizzas
+pedidas. El cliente podrá pedir las pizzas del 1 al 20 que ofrece la pizzería
+en tamaño pequeña, mediana o grande. También puede pedir pizzas propias
+por ingredientes (crear un tipo enumerado con 8 ingredientes) de cualquiera
+de los tamaños.
+2. Atender pedido: Se mostrará el pedido a atender, y este desaparecerá de la
+lista de pedidos pendientes
+3. Mostrar el número de pedidos pendientes
+4. Salir 
