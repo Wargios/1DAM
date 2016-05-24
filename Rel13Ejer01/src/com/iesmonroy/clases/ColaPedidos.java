@@ -14,7 +14,7 @@ public class ColaPedidos {
 	}
 
 	public Pedido atenderPedido() throws PizzaException {
-		Pedido pedido = pedidos.removeFirst();
+		Pedido pedido = pedidos.poll();
 		if (pedido == null)
 			throw new PizzaException("No hay más pedidos");
 		return pedido;
