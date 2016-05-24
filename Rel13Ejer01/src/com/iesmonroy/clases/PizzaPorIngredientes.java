@@ -18,13 +18,7 @@ public class PizzaPorIngredientes extends Pizza {
 	 *         encuentra
 	 */
 	public boolean addIngrediente(Ingrediente ingrediente) {
-		boolean resul = false;
-		if (!ingredientes.contains(ingrediente)) {
-			ingredientes.add(ingrediente);
-			resul = true;
-		}
-
-		return resul;
+		return ingredientes.add(ingrediente);
 	}
 
 	@Override

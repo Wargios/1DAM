@@ -1,0 +1,16 @@
+Ejercicio 2
+Realizar un programa que implemente un diccionario multilingüe - español
+1. Crear nuevo idioma
+Se solicitará el nombre del idioma y se dará de alta. Debe comprobarse que no existe
+ya ese idioma.
+2. Introducir palabra en diccionario: Se solicitará el idioma, la palabra en dicho idioma, y
+la palabra en español. Se insertará en el diccionario, salvo que ya existiese.
+3. Listado de palabras de un idioma: Se solicitará el idioma y se mostrarán las palabras
+de ese idioma ordenadas alfabéticamente y su correspondiente traducción en español.
+4. Eliminar palabra. Se solicitará el idioma y la palabra en dicho idioma a eliminar y si
+existe, se pedirá confirmación y se eliminará.
+5. Modificar traducción: Se solicitará el idioma y la palabra en dicho idioma a modificar,
+así como la nueva traducción en español. Se realizará la modificación.
+6. Salir.
+NOTAS
+• No debe considerarse ningún límite de palabra ni de idiomas
