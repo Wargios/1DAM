@@ -15,4 +15,8 @@ public class MultiDiccionario {
 	}
 	
 
+	public void introducirPalabraEnDiccionario(String idioma, String palabraIdioma, String palabraEspannol) throws DiccionarioException{
+		multi.get(idioma).addPalabra(palabraIdioma, palabraEspannol);
+	}
+
 }
